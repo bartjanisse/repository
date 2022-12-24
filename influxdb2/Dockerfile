@@ -13,9 +13,10 @@ RUN \
     && ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
     \
-    && INFLUXDB="2.1.1" \
+    && INFLUXDB="2.6.0" \
     && curl -J -L -o /tmp/influxdb2.deb \
-        "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB}-${ARCH}.deb" \
+        #"https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB}-${ARCH}.deb" \
+        "https://dl.influxdata.com/influxdb/releases/influxdb2-2.6.0-arm64.deb" \
     \
     && dpkg --install /tmp/influxdb2.deb \
     \
