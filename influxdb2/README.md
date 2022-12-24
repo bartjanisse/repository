@@ -1,4 +1,4 @@
-# Jay's Home Assistant Add-ons: InfluxDB2
+# Bart's Home Assistant Add-ons: InfluxDB2
 
 ![HA Ingress Support][influxdb2-ingressSupport]
 ![Local Build][influxdb2-local-build]
